@@ -3,7 +3,8 @@
   "grip": ["normal", "reverse"],
   "hand": ["left", "right"],
   "chamber": ["left", "right"],
-  "strike": ["witik", "lobtik"],
-  "attack": ["fist", "mid-stick", "tip", "abeniko"],
-  "target": ["groin", "belly", "head"]
+  "motion": ["witik", "lobtik"],
+  "attack": ["fist", "center", "tip", "abeniko", "punyo"],
+  "target": ["groin", "belly", "head"],
+  "punch": ["1", "1-2", "1-2-3"]
 }
