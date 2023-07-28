@@ -2,27 +2,26 @@ async function render() {
   return loadData().then((data) => display(data));
 }
 
-async function loadData() {
-  return fetch("./data.json").then((res) => res.json());
+async function loadData(url = "./data.json") {
+  return fetch(url).then((res) => res.json());
 }
 
 async function display(data) {
   const drillSpace = document.getElementById("drill-space");
   Object.entries(data).forEach(([section, content]) => {
-    const header = document.createElement("h1");
-    header.textContent = section;
-    drillSpace.appendChild(header);
+    const tr = document.createElement("tr");
+    const th = document.createElement("th");
+    th.scope = "row";
+    th.textContent = section;
+    tr.appendChild(th);
     if (Array.isArray(content)) {
-      const listItems = content.map((value) => {
-        const p = document.createElement("p");
-        p.textContent = JSON.stringify(value);
-        const li = document.createElement("li");
-        li.appendChild(p);
-        return li;
+      content.forEach((value) => {
+        const td = document.createElement("td");
+        td.textContent =
+          typeof value === "string" ? value : JSON.stringify(value);
+        tr.appendChild(td);
       });
-      const ul = document.createElement("ul");
-      listItems.forEach((li) => ul.appendChild(li));
-      drillSpace.appendChild(ul);
+      drillSpace.appendChild(tr);
     }
   });
 }

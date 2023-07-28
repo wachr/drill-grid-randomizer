@@ -4,6 +4,6 @@
   "hand": ["left", "right"],
   "chamber": ["left", "right"],
   "strike": ["witik", "lobtik"],
-  "attack": ["fist", "mid stick", "tip", "abeniko"],
+  "attack": ["fist", "mid-stick", "tip", "abeniko"],
   "target": ["groin", "belly", "head"]
 }
