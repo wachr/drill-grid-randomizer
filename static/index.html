@@ -1,12 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
+  <head>
+    <title>Drill Grid</title>
+  </head>
+  <body>
+    <script id="data" type="application/json">
+      { "lead": ["left", "right"], "grip": ["normal", "reverse"] }
+    </script>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+    <script>
+      const data = JSON.parse(document.getElementById("data").text);
+      console.log({ data });
+    </script>
 
-</body>
+    <script async blocking="render" type="module" src="index.js"></script>
+
+    <h1>Drill Grid Randomizer</h1>
+    <section id="drill-space" />
+  </body>
 </html>
