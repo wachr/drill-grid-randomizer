@@ -1,7 +1,7 @@
 {
   "lead": ["left", "right"],
-  "grip": ["normal", "reverse"],
   "hand": ["left", "right"],
+  "grip": ["normal", "reverse"],
   "chamber": ["left", "right"],
   "motion": ["witik", "lobtik"],
   "attack": ["fist", "center", "tip", "abeniko", "punyo"],

@@ -4,3 +4,8 @@ td {
   border-style: solid;
   border-color: lightslategray;
 }
+
+.chosen {
+  background-color: wheat;
+  text-decoration: underline;
+}
