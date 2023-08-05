@@ -1,10 +1,53 @@
 {
-  "lead": ["left", "right"],
-  "hand": ["left", "right"],
-  "grip": ["normal", "reverse"],
-  "chamber": ["left", "right"],
-  "motion": ["witik", "lobtik"],
-  "attack": ["fist", "center", "tip", "abeniko", "punyo"],
-  "target": ["groin", "belly", "head"],
-  "punch": ["1", "1-2", "1-2-3"]
+  "Striking": {
+    "lead": ["left", "right"],
+    "hand": ["left", "right"],
+    "grip": ["normal", "reverse"],
+    "chamber": ["left", "right"],
+    "motion": ["witik", "lobtik"],
+    "attack": ["fist", "center", "tip", "abeniko", "punyo"],
+    "target": ["groin", "belly", "head"],
+    "punch": ["1", "1-2", "1-2-3"]
+  },
+  "GM Bobby's 7-count Punching Drill": {
+    "lead": ["left", "right"],
+    "hand": ["left", "right"],
+    "grip": ["normal", "reverse"],
+    "attack": ["fist", "center", "tip", "abeniko", "punyo"],
+    "variant": ["single stick", "stick and punch", "double stick"]
+  },
+  "footwork commands": [
+    "step up",
+    "step back",
+    "release",
+    "big release",
+    "relax",
+    "change quick",
+    "change to the left",
+    "change to the right",
+    "slide forward",
+    "slide back"
+  ],
+  "boxing entries": {
+    "1": ["jab"],
+    "2": ["jab", "cross"],
+    "3": ["jab", "jab", "cross"],
+    "4": ["jab", "cross", "hook"],
+    "5": ["jab", "cross", "jab", "cross"],
+    "standard four": ["jab", "cross", "lead round kick", "rear round kick"]
+  },
+  "basic boxing/kickboxing": {
+    "lead": ["left", "right"],
+    "side": ["lead", "rear"],
+    "punches": ["jab", "cross", "hook", "uppercut", "elbow", "overhead"],
+    "kicks": ["knee", "push", "round"]
+  },
+  "punch by numbers": {
+    "1": "jab",
+    "2": "cross",
+    "3": "lead hook",
+    "4": "rear hook",
+    "5": "lead uppercut",
+    "6": "rear uppercut"
+  }
 }

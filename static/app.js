@@ -1,3 +1,5 @@
+var drillData;
+
 async function render() {
   document
     .getElementById("button-randomize")
@@ -6,11 +8,29 @@ async function render() {
 }
 
 async function loadData(url = "./data.json") {
-  return fetch(url).then((res) => res.json());
+  if (drillData) return Promise.resolve(drillData);
+  return fetch(url)
+    .then((res) => res.json())
+    .then((json) => (drillData ??= json));
 }
 
-function display(data) {
+function display() {
   const drillSpace = document.getElementById("drill-space");
+  drillSpace.appendChild(permutation("Striking"));
+  drillSpace.appendChild(permutation("GM Bobby's 7-count Punching Drill"));
+}
+
+function permutation(label) {
+  if (!Object.keys(drillData).includes(label))
+    throw new Error("Missing data: " + label);
+  return renderPermutationTable(label, drillData[label]);
+}
+
+function renderPermutationTable(label, data) {
+  const table = document.createElement("table");
+  const caption = document.createElement("caption");
+  caption.textContent = "Drill Grid: " + String(label);
+  table.appendChild(caption);
   Object.entries(data).forEach(([section, content]) => {
     const tr = document.createElement("tr");
     const th = document.createElement("th");
@@ -26,9 +46,10 @@ function display(data) {
         if (index === chosen) td.setAttribute("class", "chosen");
         tr.appendChild(td);
       });
-      drillSpace.appendChild(tr);
+      table.appendChild(tr);
     }
   });
+  return table;
 }
 
 function randomize() {
