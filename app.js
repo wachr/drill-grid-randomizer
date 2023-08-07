@@ -16,8 +16,15 @@ async function loadData(url = "./data.json") {
 
 function display() {
   const drillSpace = document.getElementById("drill-space");
-  drillSpace.appendChild(permutation("Striking"));
-  drillSpace.appendChild(permutation("GM Bobby's 7-count Punching Drill"));
+  const [strikingLabel, strikingTable] = permutation("Striking");
+  drillSpace.appendChild(strikingLabel);
+  drillSpace.appendChild(strikingTable);
+  Promise.resolve(permutation("GM Bobby's 7-count Punching Drill")).then(
+    ([p, table]) => {
+      drillSpace.appendChild(p);
+      drillSpace.appendChild(table);
+    }
+  );
 }
 
 function permutation(label) {
@@ -27,6 +34,10 @@ function permutation(label) {
 }
 
 function renderPermutationTable(label, data) {
+  const p = document.createElement("p");
+  p.textContent = "Drill Grid: " + String(label);
+  p.setAttribute("hidden", true);
+  p.setAttribute('class', 'grid-placeholder')
   const table = document.createElement("table");
   const caption = document.createElement("caption");
   caption.textContent = "Drill Grid: " + String(label);
@@ -49,7 +60,15 @@ function renderPermutationTable(label, data) {
       table.appendChild(tr);
     }
   });
-  return table;
+  p.addEventListener("click", () => {
+    table.removeAttribute("hidden");
+    p.setAttribute("hidden", true);
+  });
+  table.addEventListener("click", () => {
+    p.removeAttribute("hidden");
+    table.setAttribute("hidden", true);
+  });
+  return [p, table];
 }
 
 function randomize() {

@@ -17,3 +17,10 @@ table {
   border-style: double;
   border-color: darkslategrey;
 }
+
+.grid-placeholder {
+  padding: 0.25rem;
+  border-width: 0.25rem;
+  border-style: solid;
+  border-color: darkslategrey;
+}
