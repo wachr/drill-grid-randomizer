@@ -1,0 +1,26 @@
+{
+  "name": "drill-grid-randomizer",
+  "version": "0.1.0",
+  "description": "This is a static website or single page app to present a user with a randomized drill.",
+  "main": "static/index.html",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/wachr/drill-grid-randomizer.git"
+  },
+  "author": "https://github.com/wachr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wachr/drill-grid-randomizer/issues"
+  },
+  "homepage": "https://github.com/wachr/drill-grid-randomizer#readme",
+  "devDependencies": {
+    "jest": "^29.6.2",
+    "jest-environment-jsdom": "^29.6.2"
+  }
+}

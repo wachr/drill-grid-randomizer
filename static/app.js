@@ -23,7 +23,7 @@ function display() {
     ([p, table]) => {
       drillSpace.appendChild(p);
       drillSpace.appendChild(table);
-    }
+    },
   );
 }
 
@@ -37,7 +37,7 @@ function renderPermutationTable(label, data) {
   const p = document.createElement("p");
   p.textContent = "Drill Grid: " + String(label);
   p.setAttribute("hidden", true);
-  p.setAttribute('class', 'grid-placeholder')
+  p.setAttribute("class", "grid-placeholder");
   const table = document.createElement("table");
   const caption = document.createElement("caption");
   caption.textContent = "Drill Grid: " + String(label);
@@ -79,7 +79,7 @@ function randomize() {
       const tds = Array.from(tr.querySelectorAll("td"));
       const chosen = Math.trunc(Math.random() * tds.length);
       tds.forEach((td, index) =>
-        td.setAttribute("class", index === chosen ? "chosen" : undefined)
+        td.setAttribute("class", index === chosen ? "chosen" : undefined),
       );
     });
 }
