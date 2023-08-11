@@ -1,0 +1,20 @@
+<svg width="550" height="550" xmlns="http://www.w3.org/2000/svg">
+ <g>
+ <title>Single Stick</title>
+  <ellipse id="bottom_end" fill="SaddleBrown" ry="6.5" rx="15.25003" cy="511.98771" cx="268.25005"/>
+  <rect id="shaft" fill="SaddleBrown" height="472" width="30.74987" y="41" x="252.75013"/>
+  <ellipse id="top_end" fill="Sienna" ry="6.5" rx="15.25003" cy="40.75042" cx="268.25005"/>
+  <path id="tape_01" fill="SandyBrown" fill-opacity="0.36" d="m253.66667,445l30,-19.33333l0,31.33333l-30,19.33333l0,-31.33333z"/>
+  <path id="tape_02" fill="SandyBrown" fill-opacity="0.36" d="m253.66667,425l30.66667,-19.33333l0,31.33333l-30.66667,19.33333l0,-31.33333z"/>
+  <path id="tape_03" fill="SandyBrown" fill-opacity="0.36" d="m253.66667,464.33333l30,-19.33333l0,31.33333l-30,19.33333l0,-31.33333z"/>
+  <path id="tape_04" fill="SandyBrown" fill-opacity="0.36" d="m253.66667,385.66667l30.66667,-19.33333l0,31.33333l-30.66667,19.33333l0,-31.33333z"/>
+  <path id="tape_05" fill="SandyBrown" fill-opacity="0.36" d="m253.66667,365.66667l31.33333,-19.33333l0,31.33333l-31.33333,19.33333l0,-31.33333z"/>
+  <path id="tape_06" fill="SandyBrown" fill-opacity="0.36" d="m254.33333,405l30,-19.33333l0,31.33333l-30,19.33333l0,-31.33333z"/>
+  <path id="tape_07" fill="SandyBrown" fill-opacity="0.36" d="m253.66666,146.33334l29.33334,-19.33333l0,31.33333l-29.33334,19.33333l0,-31.33333z"/>
+  <path id="tape_08" fill="SandyBrown" fill-opacity="0.36" d="m254.33334,126.33334l29.33334,-19.33333l0,31.33333l-29.33334,19.33333l0,-31.33333z"/>
+  <path id="tape_09" fill="SandyBrown" fill-opacity="0.36" d="m253.66666,165.66667l29.33334,-19.33333l0,31.33333l-29.33334,19.33333l0,-31.33333z"/>
+  <path id="tape_10" fill="SandyBrown" fill-opacity="0.36" d="m253.66667,87.00001l30.00001,-19.33333l0,31.33333l-30.00001,19.33333l0,-31.33333z"/>
+  <path id="tape_11" fill="SandyBrown" fill-opacity="0.36" d="m253.66667,67.00001l30.66667,-19.33333l0,31.33333l-30.66667,19.33333l0,-31.33333z"/>
+  <path id="tape_12" fill="SandyBrown" fill-opacity="0.36" d="m253.66667,106.33334l30.00001,-19.33333l0,31.33333l-30.00001,19.33333l0,-31.33333z"/>
+ </g>
+</svg>
