@@ -1,0 +1,13 @@
+<svg width="550" height="550" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <title>Left Glove</title>
+  <g id="rotation_group" transform="rotate(-30 275 249.5)">
+   <ellipse id="mitt" fill="FireBrick" ry="196.49999" rx="179" cy="199.50001" cx="269.9968"/>
+   <rect id="cuff" fill="FireBrick" height="158" width="254" y="338" x="141.4968"/>
+   <path id="thumb_relief" fill="White"
+    d="m388.4968,47c11,39 -14,53 -26,84c-12,31 -5,57 12,73c17,16 32,8 35,-11c3,-19 -3,-42 9,-62c12,-20 41,-11 40.5,-11"/>
+   <ellipse id="mitt_highlight" fill="Tomato" ry="19.5" rx="78.5" cy="98.5" cx="224.9968" transform="rotate(-13 224.997 98.5)"/>
+   <ellipse id="mitt_shadow" fill="Maroon" ry="16.5" rx="105.5" cy="344.5" cx="269.9968"/>
+  </g>
+ </g>
+</svg>
