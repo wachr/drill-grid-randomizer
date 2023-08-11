@@ -1,0 +1,33 @@
+<svg width="550" height="550" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <title>Stick and Glove</title>
+
+  <g id="glove" transform="rotate(-30 275 249.5) scale(0.4) translate(140 140)">
+   <ellipse id="mitt" fill="FireBrick" ry="196.49999" rx="179" cy="199.50001" cx="269.9968"/>
+   <rect id="cuff" fill="FireBrick" height="158" width="254" y="338" x="141.4968"/>
+   <path id="thumb_relief" fill="White"
+    d="m388.4968,47c11,39 -14,53 -26,84c-12,31 -5,57 12,73c17,16 32,8 35,-11c3,-19 -3,-42 9,-62c12,-20 41,-11 40.5,-11"/>
+   <ellipse id="mitt_highlight" fill="Tomato" ry="19.5" rx="78.5" cy="98.5" cx="224.9968" transform="rotate(-13 224.997 98.5)"/>
+   <ellipse id="mitt_shadow" fill="Maroon" ry="16.5" rx="105.5" cy="344.5" cx="269.9968"/>
+  </g>
+
+  <g id="stick" transform="rotate(25 281.125 248.131)">
+   <ellipse id="bottom_end" fill="SaddleBrown" cx="274.37498" cy="510.61867" rx="15.25003" ry="6.5"/>
+   <rect id="shaft" fill="SaddleBrown" x="258.87506" y="39.63096" width="30.74987" height="472"/>
+   <ellipse id="top_end" fill="Sienna" cx="274.37498" cy="39.38138" rx="15.25003" ry="6.5"/>
+   <path id="tape_01" fill="SandyBrown" fill-opacity="0.36" d="m259.7916,443.63096l30,-19.33333l0,31.33333l-30,19.33333l0,-31.33333z"/>
+   <path id="tape_02" fill="SandyBrown" fill-opacity="0.36" d="m259.7916,423.63096l30.66667,-19.33333l0,31.33333l-30.66667,19.33333l0,-31.33333z"/>
+   <path id="tape_03" fill="SandyBrown" fill-opacity="0.36" d="m259.7916,462.96429l30,-19.33333l0,31.33333l-30,19.33333l0,-31.33333z"/>
+   <path id="tape_04" fill="SandyBrown" fill-opacity="0.36" d="m259.7916,384.29763l30.66667,-19.33333l0,31.33333l-30.66667,19.33333l0,-31.33333z"/>
+   <path id="tape_05" fill="SandyBrown" fill-opacity="0.36" d="m259.7916,364.29763l31.33333,-19.33333l0,31.33333l-31.33333,19.33333l0,-31.33333z"/>
+   <path id="tape_06" fill="SandyBrown" fill-opacity="0.36" d="m260.45826,403.63096l30,-19.33333l0,31.33333l-30,19.33333l0,-31.33333z"/>
+   <path id="tape_07" fill="SandyBrown" fill-opacity="0.36" d="m259.79159,144.9643l29.33334,-19.33333l0,31.33333l-29.33334,19.33333l0,-31.33333z"/>
+   <path id="tape_08" fill="SandyBrown" fill-opacity="0.36" d="m260.45827,124.9643l29.33334,-19.33333l0,31.33333l-29.33334,19.33333l0,-31.33333z"/>
+   <path id="tape_09" fill="SandyBrown" fill-opacity="0.36" d="m259.79159,164.29763l29.33334,-19.33333l0,31.33333l-29.33334,19.33333l0,-31.33333z"/>
+   <path id="tape_10" fill="SandyBrown" fill-opacity="0.36" d="m259.7916,85.63097l30.00001,-19.33333l0,31.33333l-30.00001,19.33333l0,-31.33333z"/>
+   <path id="tape_11" fill="SandyBrown" fill-opacity="0.36" d="m259.7916,65.63097l30.66667,-19.33333l0,31.33333l-30.66667,19.33333l0,-31.33333z"/>
+   <path id="tape_12" fill="SandyBrown" fill-opacity="0.36" d="m259.7916,104.9643l30.00001,-19.33333l0,31.33333l-30.00001,19.33333l0,-31.33333z"/>
+  </g>
+
+ </g>
+</svg>
