@@ -1,6 +1,8 @@
 <svg width="550" height="550" xmlns="http://www.w3.org/2000/svg">
  <g>
-  <title>Single Stick</title>
+  <title>Double Stick</title>
+ <defs>
+ <g id="stick">
   <g id="rotation_group" transform="rotate(10 281.125 248.131)">
    <ellipse id="bottom_end" fill="SaddleBrown" cx="274.37498" cy="510.61867" rx="15.25003" ry="6.5"/>
    <rect id="shaft" fill="SaddleBrown" x="258.87506" y="39.63096" width="30.74987" height="472"/>
@@ -19,5 +21,8 @@
    <path id="tape_12" fill="SandyBrown" fill-opacity="0.36" d="m259.7916,104.9643l30.00001,-19.33333l0,31.33333l-30.00001,19.33333l0,-31.33333z"/>
   </g>
  </g>
-
+ </defs>
+  <use href="#stick" x="-70.42729" y="0"/>
+  <use href="#stick" x="79.57271" y="0"/>
+ </g>
 </svg>
