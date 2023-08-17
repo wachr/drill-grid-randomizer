@@ -16,17 +16,15 @@ async function loadData(url = "./data.json") {
 
 function display() {
   const drillSpace = document.getElementById("drill-space");
-  Promise.resolve(permutation("Striking")).then(
-    ([p, table]) => {
-      drillSpace.appendChild(p);
-      drillSpace.appendChild(table);
-    },
-  );
+  Promise.resolve(permutation("Striking")).then(([p, table]) => {
+    drillSpace.appendChild(p);
+    drillSpace.appendChild(table);
+  });
   Promise.resolve(permutation("GM Bobby's 7-count Punching Drill")).then(
     ([p, table]) => {
       drillSpace.appendChild(p);
       drillSpace.appendChild(table);
-    },
+    }
   );
 }
 
@@ -82,7 +80,7 @@ function randomize() {
       const tds = Array.from(tr.querySelectorAll("td"));
       const chosen = Math.trunc(Math.random() * tds.length);
       tds.forEach((td, index) =>
-        td.setAttribute("class", index === chosen ? "chosen" : undefined),
+        td.setAttribute("class", index === chosen ? "chosen" : undefined)
       );
     });
 }
