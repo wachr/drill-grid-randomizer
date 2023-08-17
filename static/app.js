@@ -16,9 +16,12 @@ async function loadData(url = "./data.json") {
 
 function display() {
   const drillSpace = document.getElementById("drill-space");
-  const [strikingLabel, strikingTable] = permutation("Striking");
-  drillSpace.appendChild(strikingLabel);
-  drillSpace.appendChild(strikingTable);
+  Promise.resolve(permutation("Striking")).then(
+    ([p, table]) => {
+      drillSpace.appendChild(p);
+      drillSpace.appendChild(table);
+    },
+  );
   Promise.resolve(permutation("GM Bobby's 7-count Punching Drill")).then(
     ([p, table]) => {
       drillSpace.appendChild(p);
