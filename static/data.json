@@ -25,8 +25,8 @@
     "change quick",
     "change to the left",
     "change to the right",
-    "slide forward",
-    "slide back"
+    "one step forward",
+    "one step back"
   ],
   "boxing entries": {
     "1": ["jab"],
