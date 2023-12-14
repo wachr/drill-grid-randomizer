@@ -1,3 +1,5 @@
+import { randomly, enumerably } from "./pure";
+
 var drillData;
 
 async function render() {
@@ -16,16 +18,13 @@ async function loadData(url = "./data.json") {
 
 function display() {
   const drillSpace = document.getElementById("drill-space");
-  Promise.resolve(permutation("Striking")).then(([p, table]) => {
+  [
+    permutation("Striking"),
+    permutation("GM Bobby's 7-count Punching Drill"),
+  ].forEach(([p, table]) => {
     drillSpace.appendChild(p);
     drillSpace.appendChild(table);
   });
-  Promise.resolve(permutation("GM Bobby's 7-count Punching Drill")).then(
-    ([p, table]) => {
-      drillSpace.appendChild(p);
-      drillSpace.appendChild(table);
-    }
-  );
 }
 
 function permutation(label) {
